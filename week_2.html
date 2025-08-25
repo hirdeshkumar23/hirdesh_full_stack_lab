@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Corporation</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --light: #f4f4f4;
+      --dark: #1a252f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 20px 40px;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .logo h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background-color: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section:nth-child(even) {
+      background-color: var(--light);
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+    .status-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.status {
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+}
+
+.status.red {
+  background-color: #e74c3c;
+}
+
+.status.amber {
+  background-color: #f39c12;
+}
+
+.status.green {
+  background-color: #27ae60;
+}
+
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="c:\Users\manis\OneDrive\Desktop\letter-ac-logo-minimalist-style-vector-14081694.jpg" alt="Company Logo">
+        <h1>Hirdesh Kumar Corporation</h1>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Innovating the Future</h2>
+    <p>Leading solutions for modern businesses.</p>
+  </section>
+
+  <!-- About Section -->
+   <section class="section">
+  <h2>Project Status</h2>
+  <div class="status-container">
+    <div class="status red">🔴 Project A - Delayed</div>
+    <div class="status amber">🟠 Project B - At Risk</div>
+    <div class="status green">🟢 Project C - On Track</div>
+  </div>
+</section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>hirdesh  Corp is a leading provider of innovative tech solutions. We specialize in creating efficient, scalable, and cutting-edge products to meet our clients' needs.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>💻 Software Development</h3>
+        <p>We build reliable and scalable custom software tailored to your business goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧠 IT Consulting</h3>
+        <p>Expert advice and solutions for your IT challenges and digital transformation.</p>
+      </div>
+      <div class="service-card">
+        <h3>☁ Cloud Solutions</h3>
+        <p>Leverage the power of cloud computing to scale and secure your infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: hirdesh8543@gmail.com</p>
+    <p>Phone: 8543961780</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Hirdesh Kumar Corporation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
