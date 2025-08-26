@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background: #f4f4f4;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 220px;
+      background-color: #333;
+      color: white;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #575757;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s, padding-left 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+      padding-left: 20px;
+    }
+
+    .sidebar a.active {
+      background-color: #007bff;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome!</h1>
+    <h1>HIRDESH YADAV</h1>
+    <p>This is the main content area beside the sidebar.</p>
+    <p>You can scroll and the sidebar will stay fixed.</p>
+  </div>
+
+</body>
+</html>
